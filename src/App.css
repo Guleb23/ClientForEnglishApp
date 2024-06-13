@@ -4,6 +4,7 @@
   display: flex;
   border-radius: 45px;
   background-color: #87c38f;
+  overflow:hidden;
 }
 .content{
   margin: 30px;
