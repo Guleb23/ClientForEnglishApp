@@ -1,11 +1,15 @@
 import React from 'react'
 import './home.css'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 export default function Home() {
+  const location = useNavigate();
   return (
     <div className='wrapper'>
       <div className='grid-container'>
-        <div className='grid-item'>
+        <div className='grid-item' onClick={() =>{
+          location("/chat")
+        }}>
           <div className='grid-image'></div>
           <div className='text-body'>
             <div className='minititle'>
@@ -16,7 +20,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='grid-item'>
+        <div className='grid-item' onClick={() =>{
+          location("/MainMenu")
+        }}>
           <div className='grid-image two'></div>
           <div className='text-body twotext'>
           <div className='minititle'>
@@ -27,7 +33,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='grid-item'>
+        <div className='grid-item' onClick={() =>{
+          location("/videos")
+        }}>
         <div className='grid-image three'></div>
           <div className='text-body threetext'>
           <div className='minititle'>
