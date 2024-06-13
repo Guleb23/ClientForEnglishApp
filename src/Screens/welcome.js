@@ -37,6 +37,7 @@ export default function Welcome() {
             <Route path='/chat' element={<ChatLobby/>}/>
             <Route path='/videos/*' element={<Videos/>}/>
           </Routes>
+         <Home/>
         </div>
       </div>
     </Router>
